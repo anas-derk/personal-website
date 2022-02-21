@@ -12,6 +12,8 @@ const carouselCaptionElements = document.querySelectorAll(".home .carousel .caro
 
 const nameElement = document.querySelector(".home .carousel .carousel-inner .carousel-item .carousel-caption h1")
 
+const aboutSection = document.querySelector(".about")
+
 /* End Variables Section */
 
 /* Start Global Functions */
@@ -59,7 +61,7 @@ typeWriter()
 
 window.onscroll = (e) => {
 
-    if (window.scrollY > headerSection.clientHeight) {
+    if (this.scrollY > headerSection.clientHeight) {
 
         headerSection.style.backgroundColor = "#FFF"
 
@@ -110,6 +112,16 @@ window.onscroll = (e) => {
         brandElement.style.color = "#FFF"
 
         navToggleIcon.style.color = "#FFF"
+
+    }
+
+    if (this.scrollY >= aboutSection.offsetTop - 50) {
+
+        headerSection.style.boxShadow = "1px 1px 10px #900c3f"
+
+    } else {
+
+        headerSection.style.boxShadow = "none"
 
     }
 

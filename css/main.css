@@ -8,6 +8,15 @@ body {
   counter-reset: info-counter;
 }
 
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #900c3f;
+}
+
 .overlay {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -105,7 +114,7 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
 
 .home .carousel .carousel-inner .carousel-item .carousel-caption h1 {
   color: #FFF;
-  font-size: 75px;
+  font-size: 70px;
   font-family: 'Caveat', cursive;
 }
 
@@ -144,7 +153,7 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
 
 .about .my-image img {
   max-width: 100%;
-  min-height: 400px;
+  min-height: 430px;
   border-radius: 5px;
 }
 
@@ -162,6 +171,7 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
   position: relative;
   padding-left: 60px;
   padding-bottom: 25px;
+  text-align: left;
   border-bottom: 3px solid #FFF;
 }
 
@@ -188,4 +198,57 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
   width: 20%;
 }
 
+.about .about-content a {
+  background-color: #900c3f;
+  color: #FFF;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about .about-content a:hover {
+  background-color: #da0d5b;
+}
+
 /* End About Section */
+/* Start Education Section */
+.education {
+  background-color: #d5d5d5;
+}
+
+.education .edu-info-box {
+  background-color: #FFF;
+  padding: 20px;
+  border: 4px solid #CCC;
+  border-radius: 5px;
+}
+
+.education .edu-info-box i {
+  width: 100%;
+  color: #900c3f;
+  margin-bottom: 25px;
+}
+
+.education .edu-info-box h5 {
+  background-color: #900c3f;
+  padding: 17px;
+  color: #FFF;
+  border-top-right-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.education .edu-info-box .edu-details-list {
+  list-style-type: square;
+  list-style-position: inside;
+  border: 2px dashed #900c3f;
+}
+
+.education .edu-info-box .edu-details-list li {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.education .edu-info-box .edu-details-list li:not(:last-child) {
+  border-bottom: 2px dashed #900c3f;
+}
+
+/* End Education Section */
