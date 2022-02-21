@@ -206,9 +206,9 @@ header {
 
 /* End About Section */
 
-/* Start Education Section */
+/* Start My Education Section */
 
-.education{
+.my-education{
     background-color: #d5d5d5;
     .edu-info-box{
         background-color: #FFF;
@@ -242,4 +242,39 @@ header {
     }
 }
 
-/* End Education Section */
+/* End My Education Section */
+
+/* Start My Skills Section */
+
+.my-skills{
+    .skill-box{
+        background-color: #d5d5d5;
+        padding: {
+            top: 20px;
+            bottom: 20px
+        }
+        margin-bottom: 30px;
+        transition: 1s;
+        &:hover{
+            background-color: $mainColor;
+            color: #FFF;
+            border: 2px solid #EEE;
+            box-shadow: 1px 1px 10px #00F;
+            h4{
+                color: #FFF;
+            }
+        }
+        i{
+
+        }
+        h4{
+            margin: {
+                top: 25px;
+                bottom: 0
+            }
+            color: $mainColor;
+        }
+    }
+}
+
+/* End My Skills Section */

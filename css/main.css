@@ -210,25 +210,25 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
 }
 
 /* End About Section */
-/* Start Education Section */
-.education {
+/* Start My Education Section */
+.my-education {
   background-color: #d5d5d5;
 }
 
-.education .edu-info-box {
+.my-education .edu-info-box {
   background-color: #FFF;
   padding: 20px;
   border: 4px solid #CCC;
   border-radius: 5px;
 }
 
-.education .edu-info-box i {
+.my-education .edu-info-box i {
   width: 100%;
   color: #900c3f;
   margin-bottom: 25px;
 }
 
-.education .edu-info-box h5 {
+.my-education .edu-info-box h5 {
   background-color: #900c3f;
   padding: 17px;
   color: #FFF;
@@ -236,19 +236,46 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
   margin-bottom: 25px;
 }
 
-.education .edu-info-box .edu-details-list {
+.my-education .edu-info-box .edu-details-list {
   list-style-type: square;
   list-style-position: inside;
   border: 2px dashed #900c3f;
 }
 
-.education .edu-info-box .edu-details-list li {
+.my-education .edu-info-box .edu-details-list li {
   padding: 20px;
   font-size: 18px;
 }
 
-.education .edu-info-box .edu-details-list li:not(:last-child) {
+.my-education .edu-info-box .edu-details-list li:not(:last-child) {
   border-bottom: 2px dashed #900c3f;
 }
 
-/* End Education Section */
+/* End My Education Section */
+/* Start My Skills Section */
+.my-skills .skill-box {
+  background-color: #d5d5d5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  transition: 1s;
+}
+
+.my-skills .skill-box:hover {
+  background-color: #900c3f;
+  color: #FFF;
+  border: 2px solid #EEE;
+  box-shadow: 1px 1px 10px #00F;
+}
+
+.my-skills .skill-box:hover h4 {
+  color: #FFF;
+}
+
+.my-skills .skill-box h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  color: #900c3f;
+}
+
+/* End My Skills Section */
