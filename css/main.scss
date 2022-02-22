@@ -52,6 +52,10 @@ ul {
     padding: 0
 }
 
+a{
+    text-decoration: none
+}
+
 /* End Global Rules */
 
 /* Start Header Section */
@@ -169,7 +173,7 @@ header {
                 text-align: left;
                 border-bottom: 3px solid #FFF;
                 &:not(:last-child){
-                    margin-bottom: 40px;
+                    margin-bottom: 40px
                 }
                 &::before{
                     content: counter(info-counter);
@@ -198,7 +202,7 @@ header {
                 right: 20px
             }
             &:hover{
-                background-color: #da0d5b;
+                background-color: #da0d5b
             }
         }
     }
@@ -235,7 +239,7 @@ header {
                 padding: 20px;
                 font-size: 18px;
                 &:not(:last-child) {
-                    border-bottom: 2px dashed $mainColor;
+                    border-bottom: 2px dashed $mainColor
                 }
             }
         }
@@ -255,26 +259,106 @@ header {
         }
         margin-bottom: 30px;
         transition: 1s;
-        &:hover{
-            background-color: $mainColor;
-            color: #FFF;
-            border: 2px solid #EEE;
-            box-shadow: 1px 1px 10px #00F;
-            h4{
-                color: #FFF;
+        $brandColorsList: (
+            "fa-html5": #e34f26,
+            "fa-css3-alt": #254bdd,
+            "fa-js": #b5a421,
+            "fa-bootstrap": #672cab,
+            "fa-sass": #f11e84,
+            "fa-vuejs": #15a564,
+            "fa-react": #00d8ff,
+            "fa-mdb": #589636,
+            "fa-code": #ff3c41,
+            "fa-node": #215732,
+            "fa-gulp": #e44849,
+            "fa-git-alt": #e84d31,
+            "fa-lightbulb": #ddb321
+        );
+        @each $brandClass, $color in $brandColorsList {
+            i.#{$brandClass} {
+                color: $color
             }
-        }
-        i{
-
         }
         h4{
             margin: {
                 top: 25px;
                 bottom: 0
             }
-            color: $mainColor;
+            color: $mainColor
+        }
+        &:hover{
+            background-color: $mainColor;
+            color: #FFF;
+            border: 2px solid #EEE;
+            box-shadow: 1px 1px 10px #00F;
+            h4{
+                color: #FFF
+            }
+            i{
+                color: #FFF
+            }
         }
     }
 }
 
 /* End My Skills Section */
+
+/* Start My Projects Section */
+
+.my-projects{
+    background-color: #d5d5d5;
+    .project-box{
+        iframe{
+            height: 300px;
+        }
+        .card-body{
+            &:first-of-type{
+                background-color: $mainColor;
+                color: #FFF;
+                margin: 20px 15px;
+                border-top-right-radius: 15px;
+                h5{
+                    border-bottom: 2px dashed #FFF;
+                    padding: {
+                        top: 5px;
+                        bottom: 15px;
+                    };
+                    margin-bottom: 20px
+                }
+            }
+            .card-link{
+                background-color: $mainColor;
+                color: #FFF;
+                margin-bottom: 20px;
+                padding: {
+                    top: 10px;
+                    bottom: 10px;
+                }
+                transition: 1s;
+                &:nth-child(2) {
+                    margin-left: 0
+                }
+                &:hover{
+                    background-color: rgb(218, 13, 91)
+                }
+            }
+        }
+        .technologies-list{
+            list-style-type: square;
+            list-style-position: inside;
+            margin: {
+                left: 15px;
+                right: 15px;
+            }
+            border: 2px dashed $mainColor;
+            li{
+                padding: 15px;
+                &:not(:last-child){
+                    border-bottom: 2px dashed $mainColor
+                }
+            }
+        }
+    }
+}
+
+/* End My Projects Section */

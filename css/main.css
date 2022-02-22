@@ -49,6 +49,10 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* End Global Rules */
 /* Start Header Section */
 header {
@@ -261,6 +265,64 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
   transition: 1s;
 }
 
+.my-skills .skill-box i.fa-html5 {
+  color: #e34f26;
+}
+
+.my-skills .skill-box i.fa-css3-alt {
+  color: #254bdd;
+}
+
+.my-skills .skill-box i.fa-js {
+  color: #b5a421;
+}
+
+.my-skills .skill-box i.fa-bootstrap {
+  color: #672cab;
+}
+
+.my-skills .skill-box i.fa-sass {
+  color: #f11e84;
+}
+
+.my-skills .skill-box i.fa-vuejs {
+  color: #15a564;
+}
+
+.my-skills .skill-box i.fa-react {
+  color: #00d8ff;
+}
+
+.my-skills .skill-box i.fa-mdb {
+  color: #589636;
+}
+
+.my-skills .skill-box i.fa-code {
+  color: #ff3c41;
+}
+
+.my-skills .skill-box i.fa-node {
+  color: #215732;
+}
+
+.my-skills .skill-box i.fa-gulp {
+  color: #e44849;
+}
+
+.my-skills .skill-box i.fa-git-alt {
+  color: #e84d31;
+}
+
+.my-skills .skill-box i.fa-lightbulb {
+  color: #ddb321;
+}
+
+.my-skills .skill-box h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  color: #900c3f;
+}
+
 .my-skills .skill-box:hover {
   background-color: #900c3f;
   color: #FFF;
@@ -272,10 +334,65 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
   color: #FFF;
 }
 
-.my-skills .skill-box h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  color: #900c3f;
+.my-skills .skill-box:hover i {
+  color: #FFF;
 }
 
 /* End My Skills Section */
+/* Start My Projects Section */
+.my-projects {
+  background-color: #d5d5d5;
+}
+
+.my-projects .project-box iframe {
+  height: 300px;
+}
+
+.my-projects .project-box .card-body:first-of-type {
+  background-color: #900c3f;
+  color: #FFF;
+  margin: 20px 15px;
+  border-top-right-radius: 15px;
+}
+
+.my-projects .project-box .card-body:first-of-type h5 {
+  border-bottom: 2px dashed #FFF;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.my-projects .project-box .card-body .card-link {
+  background-color: #900c3f;
+  color: #FFF;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 1s;
+}
+
+.my-projects .project-box .card-body .card-link:nth-child(2) {
+  margin-left: 0;
+}
+
+.my-projects .project-box .card-body .card-link:hover {
+  background-color: #da0d5b;
+}
+
+.my-projects .project-box .technologies-list {
+  list-style-type: square;
+  list-style-position: inside;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 2px dashed #900c3f;
+}
+
+.my-projects .project-box .technologies-list li {
+  padding: 15px;
+}
+
+.my-projects .project-box .technologies-list li:not(:last-child) {
+  border-bottom: 2px dashed #900c3f;
+}
+
+/* End My Projects Section */
