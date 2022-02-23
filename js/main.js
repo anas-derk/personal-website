@@ -16,9 +16,7 @@ const aboutSection = document.querySelector(".about")
 
 /* End Variables Section */
 
-/* Start Global Functions */
-
-// Start TypeWriter Function
+/* Start TypeWriter Function */
 
 let i = 0
 
@@ -51,89 +49,91 @@ function typeWriter() {
 
 typeWriter()
 
-// ----------------------------------------------------------------
+/* End TypeWriter Function */
 
-/* End Global Functions */
+/* Start addEffects Function On Scroll */
 
-/* Start Header Section */
+function addEffects() {
 
-// Start headerBackgroundColorChange Function For header BackgroundColor Change On Scroll
+    window.onscroll = (e) => {
 
-window.onscroll = (e) => {
+        if (this.scrollY > headerSection.clientHeight) {
+    
+            headerSection.style.backgroundColor = "#FFF"
+    
+            navLinkElements.forEach(navLink => {
+    
+                navLink.style.color = "#000"
+    
+                navLink.onmouseenter = function() {
+    
+                    this.style.color = "#FFF"
+    
+                }
+    
+                navLink.onmouseleave = function() {
+    
+                    this.style.color = "#000"
+    
+                }
+    
+            })
+    
+            brandElement.style.color = "#000"
+    
+            navToggleIcon.style.color = "#000"
+    
+        } else {
+    
+            headerSection.style.backgroundColor = "rgba(0,0,0,.2)"
+    
+            navLinkElements.forEach(navLink => {
+    
+                navLink.style.color = "#FFF"
+    
+                navLink.onmouseenter = function() {
+    
+                    this.style.color = "#FFF"
+    
+                }
+    
+                navLink.onmouseleave = function() {
+    
+                    this.style.color = "#FFF"
+    
+                }
+    
+            })
+    
+            brandElement.style.color = "#FFF"
+    
+            navToggleIcon.style.color = "#FFF"
+    
+        }
 
-    if (this.scrollY > headerSection.clientHeight) {
+        // ---------------------------------------------
+    
+        if (this.scrollY >= aboutSection.offsetTop - 50) {
+    
+            headerSection.style.boxShadow = "1px 1px 10px #900c3f"
+    
+        } else {
+    
+            headerSection.style.boxShadow = "none"
+    
+        }
 
-        headerSection.style.backgroundColor = "#FFF"
-
-        navLinkElements.forEach(navLink => {
-
-            navLink.style.color = "#000"
-
-            navLink.onmouseenter = function() {
-
-                this.style.color = "#FFF"
-
-            }
-
-            navLink.onmouseleave = function() {
-
-                this.style.color = "#000"
-
-            }
-
-        })
-
-        brandElement.style.color = "#000"
-
-        navToggleIcon.style.color = "#000"
-
-    } else {
-
-        headerSection.style.backgroundColor = "rgba(0,0,0,.2)"
-
-        navLinkElements.forEach(navLink => {
-
-            navLink.style.color = "#FFF"
-
-            navLink.onmouseenter = function() {
-
-                this.style.color = "#FFF"
-
-            }
-
-            navLink.onmouseleave = function() {
-
-                this.style.color = "#FFF"
-
-            }
-
-        })
-
-        brandElement.style.color = "#FFF"
-
-        navToggleIcon.style.color = "#FFF"
-
-    }
-
-    if (this.scrollY >= aboutSection.offsetTop - 50) {
-
-        headerSection.style.boxShadow = "1px 1px 10px #900c3f"
-
-    } else {
-
-        headerSection.style.boxShadow = "none"
-
+        // ----------------------------------------------
+    
     }
 
 }
 
-// ----------------------------------------------------------------
+addEffects()
 
-/* End Header Section */
+/* End addEffects Function On Scroll */
 
-/* Start Home Section */
-
-// Start handling_carousel_caption_element_height Function
+/* Start handling_carousel_caption_element_height Function */
 
 function handling_carousel_caption_element_height() {
 
@@ -149,6 +149,4 @@ function handling_carousel_caption_element_height() {
 
 handling_carousel_caption_element_height()
 
-// ----------------------------------------------------------------
-
-/* End Home Section */
+/* Start handling_carousel_caption_element_height Function */

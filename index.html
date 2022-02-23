@@ -1,414 +1,461 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <!-- Start Encoding Selection [UTF-8 = Unicode Type Format] -->
-        <meta charset="UTF-8">
-        <!-- End Encoding Selection [UTF-8 = Unicode Type Format] -->
-        <!-- Start Support Responsive On Mobile Screen -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- End Support Responsive On Mobile Screen -->
-        <meta name="description" content="This Personal Website For Eng. Anas Adnan Derk">
-        <meta name="keywords" content="Anas Adnan Derk, Personal Website, Portfolio, Resume, IT, HTML, CSS, JS, Sass, Bootstrap">
-        <meta name="author" content="Anas Adnan Derk">
-        <title>Eng. Anas Adnan Derk</title>
-        <!-- Start Include CSS File For Boostrap Framework -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <!-- End Include CSS File For Boostrap Framework -->
-        <!-- Start Include Font Icon Library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <!-- End Include Font Icon Library -->
-        <!-- Start Include The Main Css File -->
-        <link rel="stylesheet" href="./css/main.css">
-        <!-- End Include The Main Css File -->
-        <!-- Start Embed the fonts from Google's servers  -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" >
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" >
-        <!-- End Embed the fonts from Google's servers  -->
-    </head>
-    <body>
-        <!-- Start Header -->
-        <header class="fixed-top">
-            <!-- Start Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container">
-                    <a class="navbar-brand fw-bold text-uppercase" href="#">Anas Adnan Derk</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav justify-content-end">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+<head>
+    <!-- Start Encoding Selection [UTF-8 = Unicode Type Format] -->
+    <meta charset="UTF-8">
+    <!-- End Encoding Selection [UTF-8 = Unicode Type Format] -->
+    <!-- Start Support Responsive On Mobile Screen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- End Support Responsive On Mobile Screen -->
+    <meta name="description" content="This Personal Website For Eng. Anas Adnan Derk">
+    <meta name="keywords"
+        content="Anas Adnan Derk, Personal Website, Portfolio, Resume, IT, HTML, CSS, JS, Sass, Bootstrap">
+    <meta name="author" content="Anas Adnan Derk">
+    <title>Eng. Anas Adnan Derk</title>
+    <!-- Start Include CSS File For Boostrap Framework -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- End Include CSS File For Boostrap Framework -->
+    <!-- Start Include Font Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- End Include Font Icon Library -->
+    <!-- Start Include The Main Css File -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- End Include The Main Css File -->
+    <!-- Start Embed the fonts from Google's servers  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap">
+    <!-- End Embed the fonts from Google's servers  -->
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header class="fixed-top">
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-uppercase" href="#">Anas Adnan Derk</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"
+                                onclick="scrollToElement(event,'.home')">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="scrollToElement(event,'.about')">
+                                About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="scrollToElement(event,'.my-education')">
+                                My Education
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="scrollToElement(event, '.my-skills')">
+                                My Skills
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="scrollToElement(event, '.my-projects')">
+                                My Projects
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="scrollToElement(event, '.work-experince')">
+                                Work Experince
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="scrollToElement(event, '.contact-me')">
+                                Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+    </header>
+    <!-- End Header -->
+    <!-- Start Home Section -->
+    <section class="home">
+        <!-- Start Slider (carousel) -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <!-- Start Carousel Inner -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000"
+                    style="background-image: url('./images/backgrounds/01.jpg');">
+                    <!-- Start Overlay -->
+                    <div class="overlay">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="fw-bold"></h1>
+                            <p>I'am <span>Junior MERN Stack</span> Developer ...</p>
+                        </div>
+                    </div>
+                    <!-- End Overlay -->
+                </div>
+                <div class="carousel-item" data-bs-interval="5000"
+                    style="background-image: url('./images/backgrounds/02.jpg');">
+                    <!-- Start Overlay -->
+                    <div class="overlay">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="fw-bold">Get your projects done online easily and safely</h1>
+                            <p>I will be glad to have your project in my works list</p>
+                        </div>
+                    </div>
+                    <!-- End Overlay -->
+                </div>
+                <div class="carousel-item" data-bs-interval="5000"
+                    style="background-image: url('./images/backgrounds/03.jpg');">
+                    <!-- Start Overlay -->
+                    <div class="overlay">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="fw-bold">Implement your project at the lowest costs and at competitive prices
+                                with me</h1>
+                            <p>Let's go for together work</p>
+                        </div>
+                    </div>
+                    <!-- End Overlay -->
+                </div>
+            </div>
+            <!-- End Carousel Inner -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <i class="fas fa-arrow-left rounded-circle"></i>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <i class="fas fa-arrow-right rounded-circle"></i>
+            </button>
+        </div>
+        <!-- End Slider (carousel) -->
+    </section>
+    <!-- End Home Section -->
+    <!-- Start About Section -->
+    <section class="about">
+        <h2 class="section-name text-center">About</h2>
+        <!-- Start Container -->
+        <div class="container">
+            <!-- Start Grid System -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="my-image">
+                        <img src="./images/backgrounds/03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content text-center">
+                        <ul class="info-list">
+                            <li>
+                                <span>Name:</span>
+                                <span>Anas Adnan Derk</span>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                            <li>
+                                <span>Age:</span>
+                                <span>23</span>
                             </li>
+                            <li>
+                                <span>Email:</span>
+                                <span>anas.derk2020@gmail.com</span>
+                            </li>
+                            <li>
+                                <span>Phone:</span>
+                                <span>+963941519404</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn">
+                            Download CV
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Grid System -->
+        </div>
+        <!-- End Container -->
+    </section>
+    <!-- End About Section -->
+    <!-- Start My Education Section -->
+    <section class="my-education">
+        <h2 class="section-name text-center">My Education</h2>
+        <!-- Start Container -->
+        <div class="container">
+            <!-- Start Grid System -->
+            <div class="row">
+                <div class="col-md">
+                    <div class="edu-info-box">
+                        <i class="fas fa-school fa-3x fa-fw"></i>
+                        <h5>Previous Education</h5>
+                        <ul class="edu-details-list">
+                            <li>Date: 2018 .</li>
+                            <li>Certificate: High School .</li>
+                            <li>School: Wasem Nabil Issa .</li>
+                            <li>Average: 83.4 % .</li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-            <!-- End Navbar -->
-        </header>
-        <!-- End Header -->
-        <!-- Start Home Section -->
-        <section class="home">
-            <!-- Start Slider (carousel) -->
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <!-- Start Carousel Inner -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="5000" style="background-image: url('./images/backgrounds/01.jpg');">
-                        <!-- Start Overlay -->
-                        <div class="overlay">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1 class="fw-bold"></h1>
-                                <p>I'am <span>Junior MERN Stack</span> Developer ...</p>
-                            </div>
-                        </div>
-                        <!-- End Overlay -->
-                    </div>
-                    <div class="carousel-item" data-bs-interval="5000" style="background-image: url('./images/backgrounds/02.jpg');">
-                        <!-- Start Overlay -->
-                        <div class="overlay">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1 class="fw-bold">Get your projects done online easily and safely</h1>
-                                <p>I will be glad to have your project in my works list</p>
-                            </div>
-                        </div>
-                        <!-- End Overlay -->
-                    </div>
-                    <div class="carousel-item" data-bs-interval="5000" style="background-image: url('./images/backgrounds/03.jpg');">
-                        <!-- Start Overlay -->
-                        <div class="overlay">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h1 class="fw-bold">Implement your project at the lowest costs and at competitive prices with me</h1>
-                                <p>Let's go for together work</p>
-                            </div>
-                        </div>
-                        <!-- End Overlay -->
+                <div class="col-md">
+                    <div class="edu-info-box">
+                        <i class="fas fa-university fa-3x fa-fw"></i>
+                        <h5>Currently Education</h5>
+                        <ul class="edu-details-list">
+                            <li>Start Education Date: 2018 .</li>
+                            <li>The year I'm studying: Fourth Year .</li>
+                            <li>College: Informatics Technology .</li>
+                            <li>Average: Almost Is 75 % .</li>
+                        </ul>
                     </div>
                 </div>
-                <!-- End Carousel Inner -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                    <i class="fas fa-arrow-left rounded-circle"></i>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                    <i class="fas fa-arrow-right rounded-circle"></i>
-                </button>
             </div>
-            <!-- End Slider (carousel) -->
-        </section>
-        <!-- End Home Section -->
-        <!-- Start About Section -->
-        <section class="about">
-            <h2 class="section-name text-center">About</h2>
-            <!-- Start Container -->
-            <div class="container">
-                <!-- Start Grid System -->
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="my-image">
-                            <img src="./images/backgrounds/03.jpg" alt="">
-                        </div>
+            <!-- End Grid System -->
+        </div>
+        <!-- End Container -->
+    </section>
+    <!-- End My Education Section -->
+    <!-- Start My Skills Section -->
+    <section class="my-skills">
+        <h2 class="section-name text-center">My Skills</h2>
+        <!-- Start Container -->
+        <div class="container">
+            <!-- Start Grid System -->
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <i class="fab fa-html5 fa-4x"></i>
+                        <h4 class="fw-bold text-uppercase">html</h4>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="about-content text-center">
-                            <ul class="info-list">
-                                <li>
-                                    <span>Name:</span>
-                                    <span>Anas Adnan Derk</span>
-                                </li>
-                                <li>
-                                    <span>Age:</span>
-                                    <span>23</span>
-                                </li>
-                                <li>
-                                    <span>Email:</span>
-                                    <span>anas.derk2020@gmail.com</span>
-                                </li>
-                                <li>
-                                    <span>Phone:</span>
-                                    <span>+963941519404</span>
-                                </li>
-                            </ul>
-                            <a href="#" class="btn">
-                                Download CV
-                                <i class="fas fa-file-pdf"></i>
+                    <!-- End Skill Box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <i class="fab fa-css3-alt fa-4x"></i>
+                        <h4 class="fw-bold text-uppercase">css</h4>
+                    </div>
+                    <!-- End Skill Box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <i class="fab fa-js fa-4x"></i>
+                        <h4 class="fw-bold">Java Script</h4>
+                    </div>
+                    <!-- End Skill Box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <img src="./images/jquery.png" alt="jquery image .." />
+                        <h4 class="fw-bold">jQuery</h4>
+                    </div>
+                    <!-- End Skill Box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <i class="fab fa-bootstrap fa-4x"></i>
+                        <h4 class="fw-bold">Boostrap</h4>
+                    </div>
+                    <!-- End Skill Box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <i class="fab fa-sass fa-4x"></i>
+                        <h4 class="fw-bold text-uppercase">sass</h4>
+                    </div>
+                    <!-- End Skill Box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <i class="fab fa-vuejs fa-4x"></i>
+                        <h4 class="fw-bold text-uppercase">vue.js</h4>
+                    </div>
+                    <!-- End Skill Box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <i class="fab fa-react fa-4x"></i>
+                        <h4 class="fw-bold text-uppercase">react.js</h4>
+                    </div>
+                    <!-- End Skill Box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <i class="fab fa-node fa-4x"></i>
+                        <h4 class="fw-bold text-uppercase">node.js</h4>
+                    </div>
+                    <!-- End Skill Box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <img src="./images/expressjs.png" alt="SEO img .." width="65" height="65">
+                        <h4 class="fw-bold text-uppercase">express.js</h4>
+                    </div>
+                    <!-- End Skill Box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <i class="fab fa-mdb fa-4x"></i>
+                        <h4 class="fw-bold text-uppercase">mongo db</h4>
+                    </div>
+                    <!-- End Skill Box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <i class="fas fa-code fa-4x"></i>>
+                        <h4 class="fw-bold text-uppercase">embedded.js</h4>
+                    </div>
+                    <!-- End Skill Box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <i class="fab fa-gulp fa-4x"></i>
+                        <h4 class="fw-bold text-uppercase">gulp.js</h4>
+                    </div>
+                    <!-- End Skill Box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <i class="fab fa-git-alt fa-4x"></i>
+                        <h4 class="fw-bold text-uppercase">git</h4>
+                    </div>
+                    <!-- End Skill Box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <i class="fab fa-github fa-4x"></i>
+                        <h4 class="fw-bold text-uppercase">github</h4>
+                    </div>
+                    <!-- End Skill Box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <img src="./images/seo.png" alt="SEO img .." width="65" height="65">
+                        <h4 class="fw-bold text-uppercase">seo</h4>
+                    </div>
+                    <!-- End Skill Box -->
+                </div>
+                <div class="col-md-4">
+                    <!-- Start Skill Box -->
+                    <div class="skill-box text-center">
+                        <i class="fas fa-lightbulb fa-4x"></i>
+                        <h4 class="fw-bold text-uppercase">problem solving</h4>
+                    </div>
+                    <!-- End Skill Box -->
+                </div>
+            </div>
+            <!-- End Grid System -->
+        </div>
+        <!-- End Container -->
+    </section>
+    <!-- End My Skills Section -->
+    <!-- Start My Projects Section -->
+    <section class="my-projects">
+        <h2 class="section-name text-center">My Projects</h2>
+        <!-- Start Container -->
+        <div class="container">
+            <!-- Start Grid System -->
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Start Project Box -->
+                    <div class="card project-box">
+                        <iframe src="https://anas-derk.github.io/stylish-design/"></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Stylish Design</h5>
+                            <p class="card-text">Technologies Used :</p>
+                        </div>
+                        <ul class="technologies-list fw-bold">
+                            <li class="text-uppercase">html</li>
+                            <li class="text-uppercase">css</li>
+                            <li class="text-uppercase">javascript</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <a a href="https://anas-derk.github.io/stylish-design/"
+                                class="card-link btn d-block fw-bold" target="_blank">
+                                Preview
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="https://github.com/anas-derk/stylish-design/" class="card-link btn d-block fw-bold"
+                                target="_blank">
+                                Code Link On Github
+                                <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
+                    <!-- End Project Box -->
                 </div>
-                <!-- End Grid System -->
-            </div>
-            <!-- End Container -->
-        </section>
-        <!-- End About Section -->
-        <!-- Start My Education Section -->
-        <section class="my-education">
-            <h2 class="section-name text-center">My Education</h2>
-            <!-- Start Container -->
-            <div class="container">
-                <!-- Start Grid System -->
-                <div class="row">
-                    <div class="col-md">
-                        <div class="edu-info-box">
-                            <i class="fas fa-school fa-3x fa-fw"></i>
-                            <h5>Previous Education</h5>
-                            <ul class="edu-details-list">
-                                <li>Date: 2018 .</li>
-                                <li>Certificate: High School .</li>
-                                <li>School: Wasem Nabil Issa .</li>
-                                <li>Average: 83.4 % .</li>
-                            </ul>
+                <div class="col-md-6">
+                    <!-- Start Project Box -->
+                    <div class="card project-box">
+                        <iframe src="https://anas-derk.github.io/stylish-design/"></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Stylish Design</h5>
+                            <p class="card-text">Technologies Used :</p>
+                        </div>
+                        <ul class="technologies-list fw-bold">
+                            <li class="text-uppercase">html</li>
+                            <li class="text-uppercase">css</li>
+                            <li class="text-uppercase">javascript</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <a a href="https://anas-derk.github.io/stylish-design/"
+                                class="card-link btn d-block fw-bold" target="_blank">
+                                Preview
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="https://github.com/anas-derk/stylish-design/" class="card-link btn d-block fw-bold"
+                                target="_blank">
+                                Code Link On Github
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md">
-                        <div class="edu-info-box">
-                            <i class="fas fa-university fa-3x fa-fw"></i>
-                            <h5>Currently Education</h5>
-                            <ul class="edu-details-list">
-                                <li>Start Education Date: 2018 .</li>
-                                <li>The year I'm studying: Fourth Year .</li>
-                                <li>College: Informatics Technology .</li>
-                                <li>Average: Almost Is 75 % .</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <!-- End Project Box -->
                 </div>
-                <!-- End Grid System -->
             </div>
-            <!-- End Container -->
-        </section>
-        <!-- End My Education Section -->
-        <!-- Start My Skills Section -->
-        <section class="my-skills">
-            <h2 class="section-name text-center">My Skills</h2>
-            <!-- Start Container -->
-            <div class="container">
-                <!-- Start Grid System -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <i class="fab fa-html5 fa-4x"></i>
-                            <h4 class="fw-bold text-uppercase">html</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <i class="fab fa-css3-alt fa-4x"></i>
-                            <h4 class="fw-bold text-uppercase">css</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <i class="fab fa-js fa-4x"></i>
-                            <h4 class="fw-bold">Java Script</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <img src="./images/jquery.png" alt="jquery image .."/>
-                            <h4 class="fw-bold">jQuery</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <i class="fab fa-bootstrap fa-4x"></i>
-                            <h4 class="fw-bold">Boostrap</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <i class="fab fa-sass fa-4x"></i>
-                            <h4 class="fw-bold text-uppercase">sass</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <i class="fab fa-vuejs fa-4x"></i>
-                            <h4 class="fw-bold text-uppercase">vue.js</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <i class="fab fa-react fa-4x"></i>
-                            <h4 class="fw-bold text-uppercase">react.js</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <i class="fab fa-node fa-4x"></i>
-                            <h4 class="fw-bold text-uppercase">node.js</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <img src="./images/expressjs.png" alt="SEO img .." width="65" height="65">
-                            <h4 class="fw-bold text-uppercase">express.js</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <i class="fab fa-mdb fa-4x"></i>
-                            <h4 class="fw-bold text-uppercase">mongo db</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <i class="fas fa-code fa-4x"></i>>
-                            <h4 class="fw-bold text-uppercase">embedded.js</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <i class="fab fa-gulp fa-4x"></i>
-                            <h4 class="fw-bold text-uppercase">gulp.js</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <i class="fab fa-git-alt fa-4x"></i>
-                            <h4 class="fw-bold text-uppercase">git</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <i class="fab fa-github fa-4x"></i>
-                            <h4 class="fw-bold text-uppercase">github</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <img src="./images/seo.png" alt="SEO img .." width="65" height="65">
-                            <h4 class="fw-bold text-uppercase">seo</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                    <div class="col-md-4">
-                        <!-- Start Skill Box -->
-                        <div class="skill-box text-center">
-                            <i class="fas fa-lightbulb fa-4x"></i>
-                            <h4 class="fw-bold text-uppercase">problem solving</h4>
-                        </div>
-                        <!-- End Skill Box -->
-                    </div>
-                </div>
-                <!-- End Grid System -->
-            </div>
-            <!-- End Container -->
-        </section>
-        <!-- End My Skills Section -->
-        <!-- Start My Projects Section -->
-        <section class="my-projects">
-            <h2 class="section-name text-center">My Projects</h2>
-            <!-- Start Container -->
-            <div class="container">
-                <!-- Start Grid System -->
-                <div class="row">
-                    <div class="col-md-6">
-                        <!-- Start Project Box -->
-                        <div class="card project-box">
-                            <iframe src="https://anas-derk.github.io/stylish-design/"></iframe>
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Stylish Design</h5>
-                                <p class="card-text">Technologies Used :</p>
-                            </div>
-                            <ul class="technologies-list fw-bold">
-                                <li class="text-uppercase">html</li>
-                                <li class="text-uppercase">css</li>
-                                <li class="text-uppercase">javascript</li>
-                            </ul>
-                            <div class="card-body text-center">
-                                <a a href="https://anas-derk.github.io/stylish-design/"
-                                    class="card-link btn d-block fw-bold"
-                                    target="_blank"
-                                >
-                                    Preview
-                                    <i class="fas fa-eye"></i>
-                                </a>
-                                <a href="https://github.com/anas-derk/stylish-design/"
-                                    class="card-link btn d-block fw-bold"
-                                    target="_blank"
-                                >
-                                    Code Link On Github
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Project Box -->
-                    </div>
-                    <div class="col-md-6">
-                        <!-- Start Project Box -->
-                        <div class="card project-box">
-                            <iframe src="https://anas-derk.github.io/stylish-design/"></iframe>
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Stylish Design</h5>
-                                <p class="card-text">Technologies Used :</p>
-                            </div>
-                            <ul class="technologies-list fw-bold">
-                                <li class="text-uppercase">html</li>
-                                <li class="text-uppercase">css</li>
-                                <li class="text-uppercase">javascript</li>
-                            </ul>
-                            <div class="card-body text-center">
-                                <a a href="https://anas-derk.github.io/stylish-design/"
-                                    class="card-link btn d-block fw-bold"
-                                    target="_blank"
-                                >
-                                    Preview
-                                    <i class="fas fa-eye"></i>
-                                </a>
-                                <a href="https://github.com/anas-derk/stylish-design/"
-                                    class="card-link btn d-block fw-bold"
-                                    target="_blank"
-                                >
-                                    Code Link On Github
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Project Box -->
-                    </div>
-                </div>
-                <!-- End Grid System -->
-            </div>
-            <!-- End Container -->
-        </section>
-        <!-- End My Projects Section -->
-        <!-- Start Include Js File For Boostrap Framework -->
-        <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <!-- End Include Js File For Boostrap Framework -->
-        <!-- Start Include The Main Js File -->
-        <script async src="./js/main.js"></script>
-    </body>
+            <!-- End Grid System -->
+        </div>
+        <!-- End Container -->
+    </section>
+    <!-- End My Projects Section -->
+    <!-- Start Include Js File For Boostrap Framework -->
+    <script
+        async src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous">
+    </script>
+    <!-- End Include Js File For Boostrap Framework -->
+    <!-- Start Include The Main Js File -->
+    <script async src="./js/main.js"></script>
+    <script>
+        function scrollToElement(e, className) {
+
+            e.preventDefault()
+
+            document.querySelector(className).scrollIntoView({ behavior: "smooth" })
+
+        }
+    </script>
+</body>
+
 </html>
