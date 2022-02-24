@@ -362,3 +362,39 @@ header {
 }
 
 /* End My Projects Section */
+
+/* Start Work Experince Section */
+
+.work-experince{
+    
+}
+
+/* End Work Experince Section */
+
+/* Start Contact Me Section */
+
+.contact-me{
+    background-color: #d5d5d5;
+    .contact-me-form{
+        input, textarea{
+            margin-bottom: 20px;
+            padding: 12px
+        }
+        textarea{
+            resize: none;
+            height: 190px
+        }
+        button{
+            width: 100%;
+            color: #FFF;
+            background-color: $mainColor;
+            padding: 12px;
+            transition: .5s;
+            &:hover{
+                background-color: #da0d5b
+            }
+        }
+    }
+}
+
+/* End Contact Me Section */

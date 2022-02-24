@@ -396,3 +396,33 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
 }
 
 /* End My Projects Section */
+/* Start Work Experince Section */
+/* End Work Experince Section */
+/* Start Contact Me Section */
+.contact-me {
+  background-color: #d5d5d5;
+}
+
+.contact-me .contact-me-form input, .contact-me .contact-me-form textarea {
+  margin-bottom: 20px;
+  padding: 12px;
+}
+
+.contact-me .contact-me-form textarea {
+  resize: none;
+  height: 190px;
+}
+
+.contact-me .contact-me-form button {
+  width: 100%;
+  color: #FFF;
+  background-color: #900c3f;
+  padding: 12px;
+  transition: .5s;
+}
+
+.contact-me .contact-me-form button:hover {
+  background-color: #da0d5b;
+}
+
+/* End Contact Me Section */
