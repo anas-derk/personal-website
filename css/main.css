@@ -419,10 +419,8 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
   background-color: #900c3f;
   padding: 12px;
   transition: .5s;
-}
-
-.contact-me .contact-me-form button:hover {
-  background-color: #da0d5b;
+  cursor: not-allowed;
+  opacity: .5;
 }
 
 /* End Contact Me Section */

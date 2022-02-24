@@ -390,9 +390,8 @@ header {
             background-color: $mainColor;
             padding: 12px;
             transition: .5s;
-            &:hover{
-                background-color: #da0d5b
-            }
+            cursor: not-allowed;
+            opacity: .5
         }
     }
 }

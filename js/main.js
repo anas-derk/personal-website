@@ -1,4 +1,4 @@
-/* Start Variables And Constant Section */
+/* Start Constant And Constant Section */
 
 const headerSection = document.querySelector("header")
 
@@ -14,7 +14,9 @@ const nameElement = document.querySelector(".home .carousel .carousel-inner .car
 
 const aboutSection = document.querySelector(".about")
 
-/* End Variables Section */
+const contactMeForm = document.querySelector(".contact-me .contact-me-form")
+
+/* End Constant Section */
 
 /* Start TypeWriter Function */
 
@@ -150,3 +152,13 @@ function handling_carousel_caption_element_height() {
 handling_carousel_caption_element_height()
 
 /* Start handling_carousel_caption_element_height Function */
+
+/* Start Prevent Send Data Of Contact Me Form */
+
+contactMeForm.onsubmit = (e) => {
+
+    e.preventDefault()
+
+}
+
+/* End Prevent Send Data Of Contact Me Form */
