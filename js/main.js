@@ -16,6 +16,10 @@ const aboutSection = document.querySelector(".about")
 
 const contactMeForm = document.querySelector(".contact-me .contact-me-form")
 
+const arrowToTopElement = document.querySelector(".arrow-to-top")
+
+const arrowToBottomElement = document.querySelector(".arrow-to-bottom")
+
 /* End Constant Section */
 
 /* Start TypeWriter Function */
@@ -118,10 +122,18 @@ function addEffects() {
         if (this.scrollY >= aboutSection.offsetTop - 50) {
     
             headerSection.style.boxShadow = "1px 1px 10px #900c3f"
+
+            arrowToBottomElement.style.display = "none"
+
+            arrowToTopElement.style.display = "block"
     
         } else {
     
             headerSection.style.boxShadow = "none"
+
+            arrowToBottomElement.style.display = "block"
+
+            arrowToTopElement.style.display = "none"
     
         }
 

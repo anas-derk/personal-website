@@ -415,6 +415,30 @@ footer .social-media-links a i:hover {
 }
 
 /* End Footer */
+/* Start Transition Arrows Box */
+.transition-arrow {
+  position: fixed;
+  right: 40px;
+  z-index: 1040;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  color: #FFF;
+  background-color: #900c3f;
+  cursor: pointer;
+}
+
+.arrow-to-bottom {
+  bottom: 40px;
+}
+
+.arrow-to-top {
+  bottom: 90px;
+  display: none;
+}
+
+/* End Transition Arrows Box */
 /* Start Sharing Group Styles */
 .edu-info-box, .work-info-box {
   background-color: #FFF;
