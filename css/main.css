@@ -144,6 +144,18 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
   font-family: 'Caveat', cursive;
 }
 
+@media (max-width: 576px) {
+  .home .carousel .carousel-inner .carousel-item .carousel-caption h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home .carousel .carousel-inner .carousel-item .carousel-caption h1 {
+    font-size: 50px;
+  }
+}
+
 .home .carousel .carousel-inner .carousel-item .carousel-caption p {
   color: #FFF;
   font-size: 30px;
@@ -156,6 +168,30 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
   padding: 15px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+@media (max-width: 576px) {
+  .home .carousel .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home .carousel .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home .carousel .carousel-inner .carousel-item .carousel-caption p.main-caption {
+    line-height: 3;
+  }
+}
+
+@media (max-width: 576px) {
+  .home .carousel .carousel-control {
+    display: none;
+  }
 }
 
 .home .carousel i {
@@ -171,6 +207,15 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
   background-color: #900c3f;
 }
 
+@media (max-width: 767px) {
+  .home .carousel i {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
 /* End Home Section */
 /* Start About Section */
 .about .my-image {
@@ -181,6 +226,12 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
   width: 100%;
   height: 700px;
   border-radius: 5px;
+}
+
+@media (max-width: 991px) {
+  .about .my-image {
+    margin-bottom: 30px;
+  }
 }
 
 .about .about-content {
@@ -221,6 +272,12 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
   width: 20%;
 }
 
+@media (max-width: 991px) {
+  .about .about-content .info-list li {
+    margin-bottom: 50px;
+  }
+}
+
 .about .about-content a {
   background-color: #900c3f;
   color: #FFF;
@@ -232,10 +289,31 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
   background-color: #da0d5b;
 }
 
+@media (max-width: 991px) {
+  .about .about-content {
+    min-height: fit-content;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .about .row {
+    justify-content: center;
+  }
+  .about .row > div {
+    width: 80%;
+  }
+}
+
 /* End About Section */
 /* Start My Education Section */
 .my-education {
   background-color: #d5d5d5;
+}
+
+@media (max-width: 991px) {
+  .my-education .edu-info-box1 {
+    margin-bottom: 50px;
+  }
 }
 
 /* End My Education Section */
@@ -380,6 +458,12 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
 
 /* End My Projects Section */
 /* Start Work Experince Section */
+@media (max-width: 991px) {
+  .work-experince .work-info-box1 {
+    margin-bottom: 50px;
+  }
+}
+
 /* End Work Experince Section */
 /* Start Contact Me Section */
 .contact-me {
@@ -419,6 +503,25 @@ footer {
   font-size: 18px;
 }
 
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 575px) {
+  footer p {
+    margin-bottom: 30px;
+  }
+  footer p, footer .social-media-links {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  footer p {
+    line-height: 2;
+  }
+}
+
 /* End Footer */
 /* Start Transition Arrows Box */
 .transition-arrow {
@@ -432,6 +535,12 @@ footer {
   color: #FFF;
   background-color: #900c3f;
   cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+  .transition-arrow {
+    display: none !important;
+  }
 }
 
 .arrow-to-bottom {

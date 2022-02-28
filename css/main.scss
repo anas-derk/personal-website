@@ -132,7 +132,13 @@ header {
                     h1{
                         color: #FFF;
                         font-size: 70px;
-                        font-family: 'Caveat', cursive
+                        font-family: 'Caveat', cursive;
+                        @media(max-width: 576px) {
+                            font-size: 40px
+                        }
+                        @media(max-width: 767px) {
+                            font-size: 50px
+                        }
                     }
                     p{
                         color: #FFF;
@@ -147,8 +153,24 @@ header {
                                 right: 10px
                             }
                         }
+                        @media(max-width: 576px) {
+                            font-size: 20px
+                        }
+                        @media(max-width: 767px) {
+                            font-size: 30px
+                        }
+                        &.main-caption{
+                            @media(max-width: 767px) {
+                                line-height: 3
+                            }
+                        }
                     }
                 }
+            }
+        }
+        .carousel-control{
+            @media(max-width: 576px) {
+                display: none
             }
         }
         i {
@@ -160,6 +182,12 @@ header {
             transition: .5s;
             &:hover{
                 background-color: $mainColor
+            }
+            @media(max-width: 767px) {
+                font-size: 20px;
+                width: 50px;
+                height: 50px;
+                line-height: 50px
             }
         }
     }
@@ -176,6 +204,9 @@ header {
             width: 100%;
             height: 700px;
             border-radius: 5px
+        }
+        @media(max-width: 991px) {
+            margin-bottom: 30px;
         }
     }
     .about-content{
@@ -211,6 +242,9 @@ header {
                     display: inline-block;
                     width: 20%
                 }
+                @media(max-width: 991px) {
+                    margin-bottom: 50px
+                }
             }
         }
         a{
@@ -224,6 +258,17 @@ header {
                 background-color: #da0d5b
             }
         }
+        @media(max-width: 991px) {
+            min-height: fit-content
+        }
+    }
+    .row{
+        @media(min-width: 577px) and (max-width: 991px) {
+            justify-content: center;
+            > div {
+                width: 80%
+            }
+        }
     }
 }
 
@@ -232,7 +277,12 @@ header {
 /* Start My Education Section */
 
 .my-education{
-    background-color: #d5d5d5
+    background-color: #d5d5d5;
+    .edu-info-box1{
+        @media(max-width: 991px) {
+            margin-bottom: 50px
+        }
+    }
 }
 
 /* End My Education Section */
@@ -353,7 +403,11 @@ header {
 /* Start Work Experince Section */
 
 .work-experince{
-    
+    .work-info-box1{
+        @media(max-width: 991px) {
+            margin-bottom: 50px
+        }
+    }
 }
 
 /* End Work Experince Section */
@@ -394,7 +448,23 @@ footer{
     padding: 15px 0;
     background-color: $mainColor;
     color: #FFF;
-    font-size: 18px
+    font-size: 18px;
+    p{
+        margin: 0
+    }
+    @media(max-width: 575px) {
+        p{
+            margin-bottom: 30px
+        }
+        p, .social-media-links{
+            text-align: center
+        }
+    }
+    @media(max-width: 991px) {
+        p{
+            line-height: 2
+        }
+    }
 }
 
 /* End Footer */
@@ -411,7 +481,10 @@ footer{
     font-size: 25px;
     color: #FFF;
     background-color: $mainColor;
-    cursor: pointer
+    cursor: pointer;
+    @media(max-width: 1199px) {
+        display: none !important
+    }
 }
 
 .arrow-to-bottom{
