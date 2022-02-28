@@ -297,9 +297,7 @@ header {
 .my-projects{
     background-color: #d5d5d5;
     .project-box{
-        iframe{
-            height: 300px;
-        }
+        margin-bottom: 30px;
         .card-body{
             &:first-of-type{
                 background-color: $mainColor;

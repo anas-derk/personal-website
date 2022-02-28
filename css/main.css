@@ -327,8 +327,8 @@ header .navbar .navbar-nav .nav-item .nav-link.active {
   background-color: #d5d5d5;
 }
 
-.my-projects .project-box iframe {
-  height: 300px;
+.my-projects .project-box {
+  margin-bottom: 30px;
 }
 
 .my-projects .project-box .card-body:first-of-type {
