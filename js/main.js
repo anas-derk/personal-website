@@ -26,7 +26,7 @@ const arrowToBottomElement = document.querySelector(".arrow-to-bottom")
 
 let i = 0
 
-let text = "Hello I'am Anas Derk"
+let text = "Hello, I am Anas Derk"
 
 function typeWriter() {
 
